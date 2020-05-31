@@ -1,0 +1,62 @@
+@media only screen and (min-width: 576px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    .header{
+        margin-top: 55px;
+        width: 602px;
+        height: 55px;
+        font-family: Montserrat;
+        font-style: bold;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 55px;
+        color: black;
+    }
+    .desc{
+        margin-top: 47px;
+        width: 454px;
+        height: 24px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .img{
+        width: 526px;
+        height: 304px;
+        background: url("..//.//.//../../../assets//img/sketch.jpg");
+        border-radius: 10px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .order{
+        margin-top: 30px;
+        width: 260px;
+        height: 60px;
+        background: #234245;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+        label{
+            width: 181px;
+            height: 24px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.065em;
+            color: #FFFFFF;
+        }
+    }
+}
+.row{
+    margin-top: 50px;
+}

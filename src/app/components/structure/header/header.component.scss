@@ -1,0 +1,31 @@
+@media only screen and (min-width: 576px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    .header{
+        position: sticky;
+        width: 100%;
+        height: 126px;
+        background: #2B2B2B;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        margin: 0px;
+        .logo{
+            height: 107px;
+            margin-top: 10px;
+            background: url("../../../../assets//img/Logo\ \(1\).png");
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding: 0px;
+            padding-left: 35px;
+        }
+    }
+}

@@ -1,4 +1,3 @@
-
 <div class="row">
     <aside class="col-sm-6 offset-3">
 <hr>
@@ -12,46 +11,46 @@
 	<p class="divider-text">
         <span class="bg-light">або</span>
     </p>
-	<form>
+	<form [formGroup]="registerForm">
 	<div class="form-group input-group">
 		<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="" class="form-control" placeholder="Введіть ім'я" type="text">
+        <input name="" class="form-control" placeholder="Ім'я" type="text" formControlName="name">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
 		 </div>
-        <input name="" class="form-control" placeholder="Ваша електронна адреса" type="email">
+        <input name="" class="form-control" placeholder="Електронна адреса" type="text" formControlName="email">
     </div> <!-- form-group// -->
     <div class="form-group input-group" style="max-width: 300px;">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
 		</div>
-    	<input name="" class="form-control" placeholder="Ваш номер телефону" type="text">
+    	<input name="" class="form-control" placeholder="Номер телефону" type="number" formControlName="phone">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input class="form-control" placeholder="Створіть пароль" type="password">
+        <input class="form-control" placeholder="Пароль" type="password" formControlName="password">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input class="form-control" placeholder="Повторіть пароль" type="password">
+        <input class="form-control" placeholder="Повторити пароль" type="password" formControlName="password">
     </div> <!-- form-group// -->                                      
     <div class="form-group">
-        <button type="submit" class="btn btn-dark-moon btn-block"> Створити акаунт  </button>
+        <button type="submit" class="btn btn-dark-moon btn-block" (click)="registerHandler()" > Створити акаунт  </button>
     </div> <!-- form-group// -->      
     <p class="text-center">Уже є акаунт? <a routerLink="/login">Вхід</a></p>                                                                 
 </form>
 </article>
 </div> <!-- card.// -->
+<hr>
 </aside>
 </div> 
 <!--container end.//-->
 
-<br><br>

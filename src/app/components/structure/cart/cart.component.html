@@ -1,0 +1,50 @@
+<hr>
+<!-- <div *ngIf="cartItems.length===0" class="alert alert-info"> Your cart is empty.</div>
+
+<ul *ngIf="cartItems.length>0" class="list-group"> -->
+    <!-- <li class="list-group-item" *ngFor="let item of cartItems"> -->
+        <!-- <app-cart-item [cartItem]="item"></app-cart-item> -->
+    <!-- </li> -->
+
+    <!-- <li class="list-group-item active">
+        <strong> Total: </strong> {{ cartTotal | currency }}
+    </li>
+</ul>
+<hr> -->
+<!-- <div *ngIf="!isLoading; else loading"></div>
+<ng-template>Завантаження...</ng-template>
+
+        <button (click)="removeItemFromOrder(item.id)">-</button>
+        <h3>{{item.name}}</h3>
+        <p>{{item.number}}</p>
+        <button (click)="addItemToOrder(item.id)">+</button>
+    </div>
+</div> -->
+
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <!-- {{item.itemsTotal}} -->
+        <div *ngFor="let item of orderedItems" class="col-sm-3">
+            <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" [src]="item.imageUrl" height="300" width="225" alt="Card image cap" style="background-size: contain;">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.price | currency: 'UAH' }}</h5>
+                    <p class="card-text">{{ item.name }}</p>
+                    <p>{{item.number}}</p>
+                    <button (click)="removeItemFromOrder(item.id)">-</button>
+                    <button (click)="handleAddProduct()">+</button>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary product-btn">Переглянути деталі</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </div>
+        </div>
+      </div>
+</div>
+<br>
+<hr>    

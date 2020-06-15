@@ -1,0 +1,18 @@
+<div class="row">
+    <ng-container *ngIf='authReady; else loading'>
+        <ng-container *ngIf="allowNavigation">
+            <p>Список вибраних продуктів</p>
+        </ng-container>
+            <!-- <div class="row">
+                <div *ngIf="!allowNavigation">
+                    <p> Для того, щоб переглядати список вибраних продуктів, будь ласка авторизуйтесь:</p>
+                    <app-login></app-login>
+                </div>
+            </div> -->
+    </ng-container>
+    <ng-template #loading>
+        Завантаження...
+    </ng-template>
+</div>
+
+

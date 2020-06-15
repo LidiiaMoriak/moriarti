@@ -8,18 +8,7 @@
 
 }
 @media only screen and (min-width: 1200px) {
-    .language{
-        height: 19px;
-        width: 120px;
-        margin-top: 51px;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 12px;
-        line-height: 19px;
-        color: #FFFFFF;
-        padding: 0px;
-    }
-    .main, .aboutUs, .constructor, .sizes, .care, .feedbacks, .contacts, .liked, .basket{
+    .main, .aboutUs, .constructor, .sizes, .care, .feedbacks, .contacts, .profile{
         padding: 0px;
         height: 17px;
         width: 120px;
@@ -34,32 +23,49 @@
         font-weight: 800;
         margin-left: 0px;
     }
-    .enter{
-        width: 148px;
-        // height: 40px;
-        margin-top: 35px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 25px;
-        letter-spacing: -0.025em;
-        button{
-            border: 1px solid white;
-            background: #2B2B2B;
-            a{
-                color: #FFFFFF;
-            }
-        }
-    }
     .liked, .basket{
         margin-top: 44px;
         color: #FFFFFF;
         height: 40.64px;
         width: 46px;
-        font-size: 35px;
+        font-size: 14px;
         font-style: normal;
+        .fa-shopping-cart, .fa-heart{
+            font-size: 30px;
+        }
+    }
+    .liked, .basket{
+        padding: 0px;
+        height: 17px;
+        width: 120px;
+        margin-top: 51px;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.025em;
+        color: #FFFFFF;
+    }
+}
+.enter{
+    width: 148px;
+    // height: 40px;
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.025em;
+    margin-right: 30px;
+    button{
+        border: 1px solid white;
+        background: #2B2B2B;
+        font-size: 14px;
+        line-height: 30px;
+        a{
+            color: #FFFFFF;
+        }
     }
 }
 a{
-    color: white;
+    color: #FFFFFF;
 }

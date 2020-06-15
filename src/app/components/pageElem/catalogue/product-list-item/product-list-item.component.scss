@@ -1,0 +1,14 @@
+.card{
+    width: 250px ;
+    background-color: #2B2B2B;
+    color: #fff;
+    margin-top: 20px;
+}
+.card-group{
+    display: flexbox;
+}
+.btn-dark-moon {
+    background: #2B2B2B;  /* fallback for old browsers */
+    color: #fff;
+    border: 3px solid #eee;
+}

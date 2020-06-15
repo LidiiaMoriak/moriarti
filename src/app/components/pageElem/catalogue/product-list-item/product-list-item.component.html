@@ -1,0 +1,20 @@
+<div class="card-group">
+        <div class="card">
+          <img class="card-img-top" [src]="productItem.imageUrl" height="300" width="225" alt="Card image cap" style="background-size: contain;">
+          <div class="card-body">
+            <h5 class="card-title">{{ productItem.price | currency: 'UAH' }}</h5>
+            <p class="card-text">{{ productItem.name }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" 
+                  class="btn btn-sm btn-dark-moon product-btn"
+                  (click)="handleAddToCart()"><i class="fas fa-shopping-basket"></i></button>
+                  <button type="button" 
+                  class="btn btn-sm btn-dark-moon product-btn"
+                  (click)="handleAddToCart()"><i class="far fa-heart"></i></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary product-btn">Переглянути деталі</button>
+                </div>
+              </div>
+          </div>
+        </div>
+</div>

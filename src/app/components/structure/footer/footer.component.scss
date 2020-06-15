@@ -1,0 +1,69 @@
+@media only screen and (min-width: 576px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    .footer{
+        position: sticky;
+        width: 100%;
+        height: 126px;
+        background: #2B2B2B;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        margin: 0px;
+        .logo{
+            height: 107px;
+            margin-top: 10px;
+            background: url("../../../../assets//img/Logo\ \(1\).png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0px;
+            // padding-left: 35px;
+        }
+        .main, .aboutUs, .constructor, .sizes, .care, .feedbacks, .contacts{
+            padding: 0px;
+            height: 17px;
+            width: 120px;
+            margin-top: 51px;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: -0.025em;
+            color: #FFFFFF;
+        }
+        .main{
+            font-weight: 800;
+            margin-left: 0px;
+        }
+        #rights{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 10px;
+            letter-spacing: -0.025em;
+            color: #FFFFFF;
+            padding-top: 15px;
+        }
+        .cont{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: -0.025em;
+            margin-top: 20px;
+            color: #FFFFFF;
+            text-align: left;
+        }
+    }
+}
+a{
+    color: white;
+}

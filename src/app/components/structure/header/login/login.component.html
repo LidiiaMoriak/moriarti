@@ -10,17 +10,17 @@
 		<a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Вхід через Facebook</a>
 	</p>
 	<hr>
-	<form>
+	<form [formGroup]="loginForm">
 	<div class="form-group input-group">
-        <input name="" class="form-control" placeholder="Електронна пошта/Логін" type="email" style="max-width: 400px;">
+        <input name="" class="form-control" placeholder="Електронна пошта/Логін" type="email" style="max-width: 400px;" formControlName="email">
     </div> <!-- form-group// -->
     <div class="form-group input-group">
-        <input class="form-control" placeholder="******" type="password">
+        <input class="form-control" placeholder="******" type="password" formControlName="password">
     </div> <!-- form-group// -->                                       
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                <button type="submit" class="btn btn-dark-moon btn-block"> Вхід  </button>
+                <button type="submit" class="btn btn-dark-moon btn-block" (click)=(loginHandler())> Вхід  </button>
             </div> <!-- form-group// -->
         </div>
         <div class="col-md-6 text-center">
@@ -30,6 +30,8 @@
 </form>
 </article>
 </div> <!-- card.// -->
+<hr>
 </aside>
 </div> 
+
 <!--container end.//-->

@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/structure/header/header.component';
 import { NavComponent } from './components/structure/nav/nav.component';
@@ -21,16 +19,23 @@ import { RegistrationComponent } from './components/structure/header/registratio
 import { MainPageComponent } from './components/structure/main-page/main-page.component';
 import { ResetPasswordComponent } from './components/structure/header/reset-password/reset-password.component';
 
-const routes: Routes = [
-  {path:'registration', component:RegistrationComponent },
-  {path:'login', component:LoginComponent },
-  {path:'main', component:MainPageComponent },
-  {path:'reset', component:ResetPasswordComponent}
-];
+import { environment } from "../environments/environment";
+import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule }    from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AuthService } from "src/app/services/authentification.service";
+import { AppRoutingModule }     from './app-routing.module';
+import { LikedComponent } from './components/structure/liked/liked.component';
+import { CartComponent } from './components/structure/cart/cart.component';
+import { UserAccountComponent } from './components/structure/user-account/user-account.component';
+import { ProductListItemComponent } from './components/pageElem/catalogue/product-list-item/product-list-item.component';
 
 
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent,
     HeaderComponent,
     NavComponent,
@@ -47,14 +52,22 @@ const routes: Routes = [
     LoginComponent,
     RegistrationComponent,
     MainPageComponent,
-    ResetPasswordComponent
-  ],
+    ResetPasswordComponent,
+    LikedComponent,
+    CartComponent,
+    UserAccountComponent,
+    ProductListItemComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(routes)	
+    AngularFireModule.initializeApp(environment.firebase, "angularfs"),
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    ReactiveFormsModule ,
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
